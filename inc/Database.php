@@ -24,7 +24,7 @@ class database {
                 $this->conn = new PDO('mysql:host='.$this->host.';dbname='.$this->baseName.'',
                 $this->user,
                 $this->password,
-                array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf'));
+                array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
             }
             catch (Exception $e) {
                 die('Connection failed : ' . $e->getMessage());

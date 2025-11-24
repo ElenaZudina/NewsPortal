@@ -10,20 +10,20 @@ class News{
     public static function getAllNews() {
         $query = "SELECT * FROM news ORDER BY id DESC";
         $db = new Database();
-        $arr = $da->getAll($query);
+        $arr = $db->getAll($query);
         return $arr;
     }
 
     public static function getNewsByCategoryID($id) {
         $query = "SELECT * FROM news where category_id=".(string)$id." ORDER BY id DESC";
-        $db = new Databasу();
+        $db = new Database();
         $arr = $db->getAll($query);
         return $arr;
     }
 
     public static function getNewsBuID($id) {
         $query = "SELECT * FROM news where id=".(string)$id;
-        $db = new Databes();
+        $db = new Database();
         $n = $db->getOne($query);
     }
 }
