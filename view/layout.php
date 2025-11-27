@@ -23,7 +23,7 @@
                     </ul>
                 </li>
                 <li><a href="testError">Info</a></li>
-                <li><a href="./Stardileht"></a></li>
+                <li><a href="./">Stardileht</a></li>
 
             </ul>
         </nav>
