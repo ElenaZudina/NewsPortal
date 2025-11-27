@@ -13,7 +13,7 @@ class Controller {
 
     public static function AllNews() {
         $arr = News::getAllNews();
-        include_once 'views/allnews.php';
+        include_once 'view/allnews.php';
     }
 
     public static function NewsByCatID($id) {
