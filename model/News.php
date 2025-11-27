@@ -21,10 +21,11 @@ class News{
         return $arr;
     }
 
-    public static function getNewsBuID($id) {
+    public static function getNewsByID($id) {
         $query = "SELECT * FROM news where id=".(string)$id;
         $db = new Database();
         $n = $db->getOne($query);
+        return $n;
     }
 }
 ?>
