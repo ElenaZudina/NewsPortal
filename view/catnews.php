@@ -5,7 +5,7 @@ ob_start();
 <br>
 
 <?php
-Views::NewsByCategory($arr);
+ViewNews::NewsByCategory($arr);
 $content = ob_get_clean();
 include_once 'view/layout.php';
 

@@ -8,6 +8,6 @@ ob_start();
 ViewNews::ReadNews($n);
 
 $content = ob_get_clean();
-include_once 'voew/layout.php';
+include_once 'view/layout.php';
 
 ?>
