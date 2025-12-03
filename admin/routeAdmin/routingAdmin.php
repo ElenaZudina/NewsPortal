@@ -14,7 +14,7 @@ elseif ($path == 'login') {
 }
 elseif ($path == 'logout') {
     // Выход
-    $response = controllerAdmin::logoutAdmin();
+    $response = controllerAdmin::logoutAction();
 }
 else 
 {
