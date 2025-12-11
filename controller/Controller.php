@@ -40,7 +40,7 @@ class Controller {
         $arr = Comments::getCommentByNewsID($newsid);
         ViewComments::CommentsByNews($arr);
     }
-    // количество комментариев к нвоости
+    // количество комментариев к ноdости
     public static function CommentsCount($newsid) {
         $arr = Comments::getCommentsCountByNewsID($newsid);
         ViewComments::CommentsCount($arr);
@@ -49,5 +49,13 @@ class Controller {
     public static function CommentsCountWithAncor($newsid) {
         $arr = Comments::getCommentsCountByNewsID($newsid);
         ViewComments::CommentsCountWithAncor($arr);
+    }
+    // Регистрация
+    public static function registerForm() {
+        include_once('view/formRegister.php');
+    }
+    public static function registerUser() {
+        $result = Register::registerUser();
+        include_once('view/answerRegister.php');
     }
 } //end class

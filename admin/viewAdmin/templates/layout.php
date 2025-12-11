@@ -1,13 +1,13 @@
 <html>
     <head>
         <title>Dashbord</title>
-        <link href="public/css/bootstrap.css" rel="stylesheet">
-        <link href="public/css/mystyle.css" rel="stylesheet">
-        <!-- Font Awesome--> <link rel="stylesheet" href="public/css/font-awesome.min.css">
+        <link href="../public/css/bootstrap.css" rel="stylesheet">
+        <link href="../public/css/mystyle.css" rel="stylesheet">
+        <!-- Font Awesome--> <link rel="stylesheet" href="../public/css/font-awesome.min.css">
         <!-- SCRIPT -->
-        <script src="public/js/jquery.min.js"></script>
-        <script src="public/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="public/js/ajaxupload.3.5.js"></script>
+        <script src="../public/js/jquery.min.js"></script>
+        <script src="../public/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../public/js/ajaxupload.3.5.js"></script>
     </head>
     <body>
         <div class="container">
@@ -27,7 +27,8 @@
 
         if(isset($_SESSION["status"]) && $_SESSION["status"]=="admin") {
 
-            echo '<h4><a href="../" target= _blank>WEB SITE </a>';
+            echo '<h4><a href="../" target= _blank>WEB SITE NEWS PORTAL</a>';
+            echo ' &#187 <a href="./" >Start admin </a>';
             echo ' &#187 <a href="categoryAdmin">Categories </a>';
             echo ' &#187 <a href="newsAdmin"> NewsList </a>';
             
