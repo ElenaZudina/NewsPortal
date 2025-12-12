@@ -8,11 +8,11 @@ class controllerAdminNews {
     //--------add
     public static function newsAddForm() {
         $arr = modelAdminCategory::getCategoryList();
-        include_once('viewsAdmin/newsAddForm.php');
+        include_once('viewAdmin/newsAddForm.php');
     }
 
     public static function newsAddResult() {
         $test = modelAdminNews::getNewsAdd();
-        include_once('viewsAdmin/newsAddForm.php');
+        include_once('viewAdmin/newsAddForm.php');
     }
 }
