@@ -18,8 +18,8 @@ class controllerAdminNews {
     //------------edit
     public static function newsEditForm($id) {
         $arr = modelAdminCategory::getCategorylist();
-        $detail = modelAminNews::getNewsDetail($id);
-        include_once('viewAdmin/newsEditOfrm.php');
+        $detail = modelAdminNews::getNewsDetail($id);
+        include_once('viewAdmin/newsEditform.php');
     }
     public static function newsEditResult($id) {
         $test = modelAdminNews::getNewsEdit($id);

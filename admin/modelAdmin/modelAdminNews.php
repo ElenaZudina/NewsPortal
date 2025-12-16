@@ -46,7 +46,7 @@ class modelAdminNews {
                 $title = $_POST['title'];
                 $text = $_POST['text'];
                 $idCategory = $_POST['idCategory'];
-                //---------------image tuype blob
+                //---------------image type blob
                 $image=$_FILES['picture']['name'];
                 if($image!="") {
                     $image = addslashes(file_get_contents($_FILES['picture']['tmp_name']));
